@@ -1,0 +1,65 @@
+//Ultima Actualizacion 05/09/2022 JON
+
+int RELE1 = 2;      // Definir pin digital del primer rele
+int RELE2 = 3;      // Definir pin digital del segundo rele
+int RELE3 = 4;      // Definir pin digital del tercer rele
+int RELE4 = 5;      // Definir pin digital del cuarto rele
+int RELE5 = 6;      // Definir pin digital del quinto rele
+int RELE6 = 7;      // Definir pin digital del sexto rele
+int RELE7 = 8;      // Definir pin digital del septimo rele
+int RELE8 = 9;      // Definir pin digital del octavo rele
+
+void setup(){
+  pinMode(RELE1, OUTPUT);  // Definimos como salida
+  pinMode(RELE2, OUTPUT);  // Definimos como salida
+  pinMode(RELE3, OUTPUT);  // Definimos como salida
+  pinMode(RELE4, OUTPUT);  // Definimos como salida
+  pinMode(RELE5, OUTPUT);  // Definimos como salida
+  pinMode(RELE6, OUTPUT);  // Definimos como salida
+  pinMode(RELE7, OUTPUT);  // Definimos como salida
+  pinMode(RELE8, OUTPUT);  // Definimos como salida
+}
+
+void loop(){
+  
+  digitalWrite(RELE1, LOW);  // Activacion del modulo de rele con un nivel bajo
+  delay(500);      // Demora de 5 seg.
+  digitalWrite(RELE1, HIGH); // Apagado del modulo de rele con un nivel alto
+  delay(500);      // Demora de 5 seg.
+
+  digitalWrite(RELE2, LOW);  // Activacion del modulo de rele con un nivel bajo
+  delay(500);      // Demora de 5 seg.
+  digitalWrite(RELE2, HIGH); // Apagado del modulo de rele con un nivel alto
+  delay(500);      // Demora de 5 seg.
+
+  digitalWrite(RELE3, LOW);  // Activacion del modulo de rele con un nivel bajo
+  delay(500);      // Demora de 5 seg.
+  digitalWrite(RELE3, HIGH); // Apagado del modulo de rele con un nivel alto
+  delay(500);      // Demora de 5 seg.
+
+  digitalWrite(RELE4, LOW);  // Activacion del modulo de rele con un nivel bajo
+  delay(500);      // Demora de 5 seg.
+  digitalWrite(RELE4, HIGH); // Apagado del modulo de rele con un nivel alto
+  delay(500);      // Demora de 5 seg.
+
+  digitalWrite(RELE5, LOW);  // Activacion del modulo de rele con un nivel bajo
+  delay(500);      // Demora de 5 seg.
+  digitalWrite(RELE5, HIGH); // Apagado del modulo de rele con un nivel alto
+  delay(500);      // Demora de 5 seg.
+
+  digitalWrite(RELE6, LOW);  // Activacion del modulo de rele con un nivel bajo
+  delay(500);      // Demora de 5 seg.
+  digitalWrite(RELE6, HIGH); // Apagado del modulo de rele con un nivel alto
+  delay(500);      // Demora de 5 seg.
+
+  digitalWrite(RELE7, LOW);  // Activacion del modulo de rele con un nivel bajo
+  delay(500);      // Demora de 5 seg.
+  digitalWrite(RELE7, HIGH); // Apagado del modulo de rele con un nivel alto
+  delay(500);      // Demora de 5 seg.
+
+  digitalWrite(RELE8, LOW);  // Activacion del modulo de rele con un nivel bajo
+  delay(500);      // Demora de 5 seg.
+  digitalWrite(RELE8, HIGH); // Apagado del modulo de rele con un nivel alto
+  delay(500);      // Demora de 5 seg.
+
+}
