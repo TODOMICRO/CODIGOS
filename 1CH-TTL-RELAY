@@ -1,0 +1,14 @@
+//Ultima Actualizacion: 05/09/2022 JON
+
+int RELE = 2;  // Pin IN de modulo a pin digital de Arduino (Modificable)
+
+void setup(){
+  pinMode(RELE, OUTPUT);  // Pin como salida
+}
+
+void loop(){
+  digitalWrite(RELE, LOW);  // Activacion del modulo de rele con un nivel bajo
+  delay(500); // Demora de 5 segundos
+  digitalWrite(RELE, HIGH); // Apagado del modulo de rele con un nivel alto
+  delay(500); // Demora de 5 segundos
+}
