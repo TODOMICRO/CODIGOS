@@ -1,0 +1,21 @@
+//Ultima Actualizacion 05/09/2022 JON
+
+int RELE1 = 2;      // Definir pin digital del primer rele
+int RELE2 = 3;      // Definir pin digital del segundo rele
+
+void setup(){
+  pinMode(RELE1, OUTPUT);  // Definimos como salida
+  pinMode(RELE2, OUTPUT);  // Definimos como salida
+}
+
+void loop(){
+  digitalWrite(RELE1, LOW);  // Activacion del modulo de rele con un nivel bajo
+  delay(500);      // Demora de 5 seg.
+  digitalWrite(RELE1, HIGH); // Apagado del modulo de rele con un nivel alto
+  delay(500);      // Demora de 5 seg.
+
+  digitalWrite(RELE2, LOW);  // Activacion del modulo de rele con un nivel bajo
+  delay(500);      // Demora de 5 seg.
+  digitalWrite(RELE2, HIGH); // Apagado del modulo de rele con un nivel alto
+  delay(500);      // Demora de 5 seg.
+}
