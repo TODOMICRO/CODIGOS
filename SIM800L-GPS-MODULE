@@ -1,0 +1,25 @@
+//Ultima Actualizacion 05/09/2022 JON TODOMICRO
+
+#include <SoftwareSerial.h> // Incluimos libreria
+SoftwareSerial SIM900(7, 8); // Definimos al 7 como RX y el 8 como TX
+
+char caracter; // Caracter que vamos a obtener
+
+void setup() {
+    Serial.begin(9600); // Establecemos la comunicación serial del monitor arduino
+    SIM900.begin(9600); // Establecemos la comunicación serial del SIM800
+    delay(1000); // Tiempo de espera
+}
+
+void loop() {
+  
+  if(SIM900.available()){ // Validar si esta recibiendo caracteres
+      caracter = SIM900.read(); // Leer caracteres
+      Serial.print(caracter); // Mostrar los caracteres
+  }
+  
+  if(Serial.available()){
+      caracter = Serial.read(); // Leer caracteres en puerto serial 
+      SIM900.print(caracter); // Mostrar los caracteres obtenidos
+  }
+}
